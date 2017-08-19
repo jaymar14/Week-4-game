@@ -1,0 +1,144 @@
+/* General Elements*/
+body{
+	background-color: grey;
+}
+	
+div{
+	background-color: white;
+	margin: 10px;
+	width: 50%;
+}
+div{
+	border: solid 2px antiquewhite;
+	padding: 10px;
+}
+h1, h3, span{
+	font-weight: bold;
+	text-align: center;
+}
+h1{
+	font-size: 30pt;
+}
+
+ul {
+	list-style: disc inside;
+	text-indent: 20px;
+}
+/* Specfic Elements*/
+div.header, div.gems{
+	background-color: orange;
+}
+div.header, div.instructions{
+	width: 50%;
+}
+/* Classes */
+.numberToMatch, .winsAndLosses{
+	float: left;
+	width: 15%;
+	height: 60px;
+}
+.userTotal{
+	width: 15%;
+	height: 60px;
+}
+.gems{
+	clear: both;
+}
+.gemImage{
+	height: 60px;
+	margin: 10px;
+}
+/* IDs */
+#blue{
+	color: #3092c7;
+}
+#green{
+	color: #00aa59;
+}
+#red{
+	color: #ec4b5f;
+}
+#yellow{
+	color: #ffc225;
+}
+
+/* media query 980px*/
+@media screen and (max-width: 980px) {
+
+	.container{
+		margin-left: 130px;
+		margin-right: 130px;
+		max-width: 960px;
+	}
+	.main-section {
+		width:50%;
+		float: left;
+		margin-right: 20px
+	}
+	.auth-image{
+		width: 100%;
+		float: none;
+	}
+    .sidebar {
+    	float: left;
+		margin-left: 20px;  	
+    }
+    /*smaller desktop*/
+}
+
+/* media query 768px*/
+@media screen and (max-width: 768px) {
+
+	.container{
+		margin-left: 130px;
+		margin-right: 130px;
+		max-width: 768px;
+	}
+	.main-section, .container{
+		width: 75%;
+		float: none;
+		margin-right: 1px
+	}
+	.auth-image{
+		width: 200px;
+		height: auto;
+		margin-top: 10px;
+		float: left;
+		margin-right: 25px;
+	}
+    .sidebar {
+    	width:100%;
+    	max-width: 75%;
+		float: none;
+		margin-left: 1px;
+		margin-right: 1px
+	    }
+/*portfolio page*/
+	.clear{
+		clear: both;
+		}
+   /*tablet desktop*/
+}
+
+/* media query 640px*/
+@media screen and (max-width: 640px) {
+
+	.container{
+		margin-left: 130px;
+		margin-right: 130px;
+		max-width: 640px;
+	}
+	.main-section, .container{
+		width: 75%;
+		float: none;
+		margin-right: 1px
+	}
+	.auth-image{
+		width: 100%;
+		float: none;
+	}
+	#logo, nav{
+		width: 100%;
+		float: none;
+	}
+}
